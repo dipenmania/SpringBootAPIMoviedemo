@@ -36,7 +36,7 @@ public class MovieServiceImpl implements MovieService  {
 	
     public Page<MoviesOutDTO> searchEmployeeWithQueryPaginationSortingAndFiltering(MoviesInDTO moviesInDTO) {
         FilterDTO filterDto = FilterDTO.builder().rating(moviesInDTO.getRating())
-                .generes(moviesInDTO.getGeneres()).title(moviesInDTO.getTitle())
+                .genres(moviesInDTO.getGeneres()).title(moviesInDTO.getTitle())
                 .build();
 
         List<Sort.Order> orders = new ArrayList<>();
