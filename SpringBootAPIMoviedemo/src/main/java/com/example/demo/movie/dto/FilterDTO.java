@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 
 public class FilterDTO {
 	
-	private String rating;
-    private String  generes;
+    private String rating;
+    private String genres;
     private String title;
 }
