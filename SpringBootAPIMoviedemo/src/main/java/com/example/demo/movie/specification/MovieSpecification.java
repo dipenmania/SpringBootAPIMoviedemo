@@ -24,7 +24,7 @@ public class MovieSpecification {
 	            predicates.add(criteriaBuilder.like(criteriaBuilder.upper(root.get("title")), "%" + filterDto.getTitle().toUpperCase() + "%"));
 	            
 	            if (filterDto.getGeneres()!= null && !(filterDto.getGeneres().isEmpty())) {
-	                predicates.add(criteriaBuilder.equal(root.get("generes"),filterDto.getGeneres()));
+	                predicates.add(criteriaBuilder.equal(root.get("genres"),filterDto.getGeneres()));
 	            }
 
 	            if (filterDto.getRating() != null && !(filterDto.getRating().isEmpty())) {
