@@ -1,0 +1,96 @@
+# Spring Boot Movie Demo" Example Project
+
+This is a sample Java / Maven / Spring Boot application that can be used to create a backend service with a database and API that supports the features needed for a mobile app or web app.
+## How to Run 
+
+This application has Tomcat 8 embedded. No Tomcat or JBoss installation is necessary. You can run it your IDE with SpringBoot Configuration
+
+* Clone this repository 
+* Make sure you are using JDK 17+ and Maven 3.x
+
+Once the application runs you should see something like this
+
+2025-02-17T17:43:18.218+01:00[0;39m [32m INFO[0;39m [35m53076[0;39m [2m--- [SpringBootAPIMoviedemo] [           main] [0;39m[36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port 8080 (http) with context path '/'
+2025-02-17T17:43:18.235+01:00[0;39m [32m INFO[0;39m [35m53076[0;39m [2m--- [SpringBootAPIMoviedemo] [           main] [0;39m[36m.e.d.m.SpringBootApiMoviedemoApplication[0;39m [2m:[0;39m Started SpringBootApiMoviedemoApplication in 25.54 seconds (process running for 106.71)
+`
+
+## About the Service
+
+The service is just a simple Movie review REST service. It uses an in-memory database (H2) to store the data. You can also do with a relational database like MySQL or PostgreSQL. If your database connection properties work, you can call some REST endpoints defined in ```com.example.demo.movie.controller.movieAPIController``` on **port 8080**. (see below)
+
+
+You can use this sample service to understand the conventions and configurations that allow you to create a DB-backed RESTful service. Once you understand and get comfortable with the sample app you can add your own services following the same patterns as the sample service.
+ 
+Here is what this little application demonstrates: 
+
+* Full integration with the latest **Spring** Framework: inversion of control, dependency injection, etc.
+* Packaging as a single war with embedded container (tomcat 8): No need to install a container separately on the host just run using the ``java -jar`` command
+*  Writing a RESTful service using annotation: supports both XML and JSON request / response; simply use desired ``Accept`` header in your request
+* *Spring Data* Integration with JPA/Hibernate with just a few lines of configuration and familiar annotations. 
+* Automatic CRUD functionality against the data source using Spring *Repository* pattern
+* All APIs are "self-documented" by Swagger2 using annotations 
+
+##Implemented REST API EndPoint
+
+
+**API Key System**
+- Implemented an API key system to control access to the below endpoints.
+- Users should include their API key in the header section for every api action (except Swagger and H2 Console)
+  Name : apiKey, Value = MovieAPIDemo
+
+A) API to get the popular 50 movies with various sorting and pagination option
+ -URL: /movies/popular : 
+- Method: GET
+- Purpose: It Retrieves the top 50 popular movies.
+- Query Parameters: page (optional) for pagination.
+- Response:
+- Movie ID
+- Title
+- Release Date
+- Poster URL
+- Average Rating
+
+Eg : http://localhost:8080/movies/popular
+
+B) API to search the movies using multiple combination (Using Like in Query paramerter for title and Optionally Sort and filter results using rating and generes option)
+  URL: /movies/search
+- Method: GET
+- Query Parameters: query (required), sort_by (optional), and filter (optional).
+- Purpose: Search for movies by title, and optionally sort or filter results.
+- Response:
+- Movie ID
+- Title
+- Release Date
+- Poster URL
+- Average Rating
+
+Eg : http://localhost:8080/movies/search?title=land
+
+C)API to retreive the Movie Details by id
+- URL: /movies/{id}
+- Method: GET
+- Purpose: Retrieve detailed information about a specific movie.
+- Response:
+- Title
+- Release Date
+- Full Poster URL
+- Overview
+- Genres
+- Average Rating
+- Runtime
+- Language
+
+Eg : http://localhost:8080/movies/1
+
+
+It has inbuilt Swagger to test the api, once the server is up you can connect as below
+
+http://localhost:8080/swagger-ui/index.html
+
+(Make sure you add the above value of apiKey in the authorise section (right side) of the swagger UI)
+
+The H2 Console is accesible at http://localhost:8080/h2-console
+
+
+
+# Questions and Comments: dipenmania@gmail.com
