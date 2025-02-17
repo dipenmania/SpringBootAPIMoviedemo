@@ -121,38 +121,38 @@ public class DataLoader implements ApplicationRunner {
 		movieRepository.save(new Movie("Angoloa",date29,"www.Ireland.com","Best","U",5,"165 minutes", "English,Dutch and Hindi"));
 		
 		
-		movieRepository.save(new Movie("Life is good",date30,"www.bossindia.com","good","U/A",6,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("The Good and the bad",date32,"www.theworld.com","OK","U/A",7,"105 minutes", "English and Hindi"));
-		movieRepository.save(new Movie("Best of India",date31,"www.worldIndia.com","Best","A",8,"65 minutes", "English"));
-		movieRepository.save(new Movie("World and the Boss",date32,"www.Netherlandboss.com","Amazing","U/A",9,"145 minutes", "English,and Dutch"));
-		movieRepository.save(new Movie("Zambia",date33,"www.Latvia.com","SUPER","U/A",10,"195 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("Zimbabve",date34,"www.India.com","Best","U",6,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("Australia",date35,"www.Netherland.com","Best","U/A",7,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("New Zealand",date36,"www.Sudan.com","OK","U/A",8,"165 minutes", "English and Hindi"));
-		movieRepository.save(new Movie("Peru",date37,"www.America.com","OK","U",9,"165 minutes", "English,Dutch"));
-		movieRepository.save(new Movie("Cameroon",date38,"www.Poland.com","good","U/A",6,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("Japan",date39,"www.Germany.com","Amazing","U/A",9,"165 minutes", "English and Hindi"));
-		movieRepository.save(new Movie("South korea",date40,"www.England.com","OK","U",8,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("Taiwan",date41,"www.Scotland.com","good","U/A",5,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("China",date42,"www.Wales.com","good","U/A",6,"165 minutes", "Dutch and Hindi"));
-		movieRepository.save(new Movie("Mangolia",date43,"www.Ireland.com","Best","U",5,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Life is good",date30,"www.lifesisgood.com","good","U/A",6,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("The Good and the bad",date32,"www.thegoodandthebad.com","OK","U/A",7,"105 minutes", "English and Hindi"));
+		movieRepository.save(new Movie("Best of India",date31,"www.bestofindia.com","Best","A",8,"65 minutes", "English"));
+		movieRepository.save(new Movie("World and the Boss",date32,"www.worldandtheboss.com","Amazing","U/A",9,"145 minutes", "English,and Dutch"));
+		movieRepository.save(new Movie("Zambia",date33,"www.zambia.com","SUPER","U/A",10,"195 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Zimbabve",date34,"www.zimbabve.com","Best","U",6,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Australia",date35,"www.australia.com","Best","U/A",7,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("New Zealand",date36,"www.newzealand.com","OK","U/A",8,"165 minutes", "English and Hindi"));
+		movieRepository.save(new Movie("Peru",date37,"www.peru.com","OK","U",9,"165 minutes", "English,Dutch"));
+		movieRepository.save(new Movie("Cameroon",date38,"www.cameroon.com","good","U/A",6,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Japan",date39,"www.japan.com","Amazing","U/A",9,"165 minutes", "English and Hindi"));
+		movieRepository.save(new Movie("South korea",date40,"www.southkorea.com","OK","U",8,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Taiwan",date41,"www.taiwan.com","good","U/A",5,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("China",date42,"www.china.com","good","U/A",6,"165 minutes", "Dutch and Hindi"));
+		movieRepository.save(new Movie("Mangolia",date43,"www.mangolia.com","Best","U",5,"165 minutes", "English,Dutch and Hindi"));
 		
-		movieRepository.save(new Movie("Vibrant World",date44,"www.bossindia.com","good","U/A",6,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("The World Saga",date45,"www.theworld.com","OK","U/A",7,"105 minutes", "English and Hindi"));
-		movieRepository.save(new Movie("World Cup",date46,"www.worldIndia.com","Best","A",8,"65 minutes", "English"));
-		movieRepository.save(new Movie("Ugly Boss",date47,"www.Netherlandboss.com","Amazing","U/A",9,"145 minutes", "English,and Dutch"));
-		movieRepository.save(new Movie("DRC",date48,"www.Latvia.com","SUPER","U/A",10,"195 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("Congo",date49,"www.India.com","Best","U",6,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("Nigeria",date50,"www.Netherland.com","Best","U/A",7,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("Niger",date51,"www.Sudan.com","OK","U/A",8,"165 minutes", "English and Hindi"));
-		movieRepository.save(new Movie("Chad",date52,"www.America.com","OK","U",9,"165 minutes", "English,Dutch"));
-		movieRepository.save(new Movie("Ghana",date53,"www.Poland.com","good","U/A",6,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("Somalia",date54,"www.Germany.com","Amazing","U/A",9,"165 minutes", "English and Hindi"));
-		movieRepository.save(new Movie("Ethopia",date55,"www.England.com","OK","U",8,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("Djibouti",date56,"www.Scotland.com","good","U/A",5,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("Algeria",date57,"www.Wales.com","good","U/A",6,"165 minutes", "Dutch and Hindi"));
-		movieRepository.save(new Movie("Libya",date58,"www.Ireland.com","Best","U",5,"165 minutes", "English,Dutch and Hindi"));
-		movieRepository.save(new Movie("Tunisia",date59,"www.Ireland.com","Best","U",5,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Vibrant World",date44,"www.vibrantindia.com","good","U/A",6,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("The World Saga",date45,"www.theworldsaga.com","OK","U/A",7,"105 minutes", "English and Hindi"));
+		movieRepository.save(new Movie("World Cup",date46,"www.worldcuo.com","Best","A",8,"65 minutes", "English"));
+		movieRepository.save(new Movie("Ugly Boss",date47,"www.uglyboss.com","Amazing","U/A",9,"145 minutes", "English,and Dutch"));
+		movieRepository.save(new Movie("DRC",date48,"www.drc.com","SUPER","U/A",10,"195 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Congo",date49,"www.congo.com","Best","U",6,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Nigeria",date50,"www.nigeria.com","Best","U/A",7,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Niger",date51,"www.niger.com","OK","U/A",8,"165 minutes", "English and Hindi"));
+		movieRepository.save(new Movie("Chad",date52,"www.chad.com","OK","U",9,"165 minutes", "English,Dutch"));
+		movieRepository.save(new Movie("Ghana",date53,"www.ghana.com","good","U/A",6,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Somalia",date54,"www.somalia.com","Amazing","U/A",9,"165 minutes", "English and Hindi"));
+		movieRepository.save(new Movie("Ethopia",date55,"www.ethopia.com","OK","U",8,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Djibouti",date56,"www.Djibouti.com","good","U/A",5,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Algeria",date57,"www.algeria.com","good","U/A",6,"165 minutes", "Dutch and Hindi"));
+		movieRepository.save(new Movie("Libya",date58,"www.libya.com","Best","U",5,"165 minutes", "English,Dutch and Hindi"));
+		movieRepository.save(new Movie("Tunisia",date59,"www.tunisia.com","Best","U",5,"165 minutes", "English,Dutch and Hindi"));
 		
 		
 		

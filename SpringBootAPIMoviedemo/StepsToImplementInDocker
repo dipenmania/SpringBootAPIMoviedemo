@@ -1,0 +1,23 @@
+AFTER MAVEN INSTALL - PACKAGE
+RENAME SpringBootAPIMoviedemo-0.0.1-SNAPSHOT.jar to spring-docker.jar
+
+
+--Change the port in Dockerfile (If you want some other port)
+Go to your root (Pom.xml) directory and run following command
+docker build -t springdemomovie:v1 .
+
+--Your image would be created.
+
+--Create a new container (I used Docker Desktop)
+docker run --name springdemo -dp 8081:8080 springdemomovie:v1
+
+
+----Check for above container is created with
+docker container ps
+
+
+--Check logs with below command
+docker logs springdemo
+
+
+--Check your API with postman(8081 if from outside)
